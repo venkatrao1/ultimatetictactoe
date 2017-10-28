@@ -1,3 +1,1 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/venkatrao1/pen/OOJjJV.
-
- 
+This is a version of Ultimate Tic Tac Toe that I created using HTML5, CSS3, JavaScript, jQuery, and Bootstrap. It uses Google's Firebase to handle online multiplayer.
