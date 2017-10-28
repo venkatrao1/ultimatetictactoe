@@ -31,7 +31,7 @@ $(document).ready(function() {
         parentBox.addClass("won");
         if(isBoardWon(turn)) displayWinner(turn);
       }
-      else if(!hasBlank(parentBox)){
+      else if(!(parentBox.hasClass("won")||hasBlank(parentBox))){
           parentBox.addClass("bg-secondary");
       }
       turn = otherLetter(turn);
