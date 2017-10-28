@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Tic Tac Toe (online)</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container-fluid outermost">
+  <br>
+  <div class="row">
+    <div class="col-4 bg-secondary rounded mx-auto">
+      <br>
+      <h1 class="text-center">Venkat's Ultimate Tic Tac Toe</h1>
+      <hr>
+        <input type="text" class="form-control" placeholder="Game ID" id="gameid">
+      <br>
+      <div class="row">
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btn-block create">Create Game</button>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-block btn-info join">Join Game</button>
+        </div>
+        <div class="col-4">
+          <a href="./offline.html"><button type="button" class="btn btn-success btn-block local">Local Game</button></a>
+        </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/4.6.0/firebase.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
