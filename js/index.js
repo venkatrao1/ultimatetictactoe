@@ -44,7 +44,9 @@ function init(){
     var moveIndex = getSpaceIndex(this);
     var parentBox = getParentBox(this);
     if(isValidMove(moveIndex)){
+      $("td").removeClass("text-success");
       $(this).html(turn);
+      $(this).addClass("text-success");
       lastMove=moveIndex;
       if(isBoxWon(turn, parentBox)){
         parentBox.addClass(playerColors[turn]);
