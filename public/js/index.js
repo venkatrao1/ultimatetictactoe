@@ -64,16 +64,16 @@ function init(){
 
 function startFirebase(){
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCLH9b36TqaRUSIOlltU4nposdsoiguNqc",
+  const config = {
+    apiKey: "AIzaSyCLH9b36TqaRUSIOlltU4nposdsoiguNqc", // this is a not good idea but this is also just a 5 year old tictactoe game
     authDomain: "ultimate-tic-tac-toe-ea3ac.firebaseapp.com",
     databaseURL: "https://ultimate-tic-tac-toe-ea3ac.firebaseio.com",
     projectId: "ultimate-tic-tac-toe-ea3ac",
     storageBucket: "ultimate-tic-tac-toe-ea3ac.appspot.com",
-    messagingSenderId: "1088131710249"
+    messagingSenderId: "1088131710249",
+    appId: "1:1088131710249:web:8b30a1afe45e375fc78b38"
   };
   firebase.initializeApp(config);
-  database = firebase.database();
   gameData=firebase.database().ref(gameID);
   gameData.set({});
   gameData.on('value',function(snapshot){
@@ -165,3 +165,4 @@ function isBoardWon(letter){
   if(spaces[2]==spaces[4]&&spaces[4]==spaces[6]&&spaces[2]==letter) return true;
   return false;
 }
+
